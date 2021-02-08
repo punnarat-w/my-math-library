@@ -5,8 +5,10 @@ function sum(a, b){
         //     total += a[i]
             
         // }
-        a.forEach((i)=>(total+=i))
-        return total
+        // a.forEach((i)=>(total+=i))
+        // return total
+
+        return a.reduce((total,i)=>total + i,0)
     }
     return a+b
 }
